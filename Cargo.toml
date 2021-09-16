@@ -1,0 +1,13 @@
+[package]
+name = "foo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nalgebra = "0.29.0"
+image = { version = "0.23.14", default-features = false, features = ["png","jpeg_rayon"] }
+imageproc = { version = "0.22.0", default-features = false }
+pico-detect = { path = "./pico-detect" }
+structopt = "0.3.23"
+rand_xorshift = "0.3.0"
+rand = "0.8.4"
